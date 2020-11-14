@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      /* body{direction: rtl;} */
+      .grid-container > div {
+        background-color: rgba(255, 255, 255, 0.8);
+        text-align: center;
+        padding: 20px 0;
+        font-size: 30px;
+        border: 1px solid black;
+      }
+      .grid-container {
+        background-color: #2196f3;
+        /* padding: 10px; */
+        margin-bottom: 20px;
+        display: grid;
+      }
+
+      .grid-template-columns {
+        grid-template-columns: auto auto;
+        grid-template-columns: auto auto auto;
+        grid-template-columns: auto 100px auto;
+        grid-template-columns: auto 100px 20%;
+      }
+      .grid-template-rows {
+        grid-template-rows: 200px auto 50%;
+        grid-template-rows: 200px auto 100px;
+      }
+      .grid-gap {
+        /* grid-row-gap: 20px;
+        grid-column-gap: 40px; */
+
+        grid-gap: 40px;
+        /* grid-gap: row column; */
+        grid-gap: 20px 40px;
+      }
+
+      /*************************/
+      .grid-items {
+        grid-template-columns: auto auto auto auto;
+      }
+
+      .item-1 {
+        grid-column-start: 1;
+        grid-column-end: 3;
+      }
+      .item-2 {
+        grid-column-start: 3;
+        grid-column-end: 5;
+      }
+      .item-4 {
+        /* grid-column-start: 3;
+          grid-column-end: 5; */
+        grid-column: 3 / 5;
+      }
+      .item-7 {
+        /* grid-column-start: 2;
+          grid-column-end: 4; */
+        grid-column: 2 / 4;
+      }
+      .item-10 {
+        /* grid-column-start: 2;
+        grid-column-end: span 2; */
+        grid-column: 2 / span 2;
+      }
+      .item-12{
+          grid-row: 6 / span 2;
+      }
+      .item-13{
+          /* grid-row: 6 / span 3;
+          grid-column: 2 / span 2; */
+
+          /* grid-area: row-start / column-start / span row-end / span column-end; */
+          grid-area: 6 / 2 / span 3 / span 2;
+      }
+    </style>
+  </head>
+  <body>
+    <div
+      class="grid-container grid-template-columns grid-template-rows grid-gap"
+    >
+      <div>1</div>
+      <div>2</div>
+      <div>3</div>
+      <div>4</div>
+      <div>5</div>
+      <div>6</div>
+      <div>7</div>
+      <div>8</div>
+    </div>
+    <div class="grid-container grid-items">
+      <div class="item-1">1</div>
+      <div class="item-2">2</div>
+      <div class="item-3">3</div>
+      <div class="item-4">4</div>
+      <div class="item-5">5</div>
+      <div class="item-6">6</div>
+      <div class="item-7">7</div>
+      <div class="item-8">8</div>
+      <div class="item-9">9</div>
+      <div class="item-10">10</div>
+      <div class="item-11">11</div>
+      <div class="item-12">12</div>
+      <div class="item-13">13</div>
+      <div class="item-14">14</div>
+      <div class="item-15">15</div>
+      <div class="item-16">16</div>
+      <div class="item-17">17</div>
+      <div class="item-18">18</div>
+      <div class="item-19">19</div>
+      <div class="item-20">20</div>
+    </div>
+  </body>
+</html>
