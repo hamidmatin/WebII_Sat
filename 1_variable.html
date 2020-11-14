@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      :root {
+        --main-bg-color: #221eff;
+        --secondry-bg-color: #ffffff;
+        --padding-lg: 25px;
+        --padding-sm: 1px;
+        --main-font-family: arial;
+
+        --border-thin-maincolor: 1px solid var(--main-bg-color);
+      }
+
+      body {
+        background-color: var(--main-bg-color);
+        font-family: var(--main-font-family);
+      }
+
+      h2 {
+        border-bottom: 2px solid var(--main-bg-color);
+
+        --my-transform: skewX(-20deg);
+        -webkit-transform: var(--my-transform);
+        -moz-transform: var(--my-transform);
+        -o-transform: var(--my-transform);
+        transform: var(--my-transform);
+      }
+
+      .container {
+        color: var(--main-bg-color);
+        background-color: var(--secondry-bg-color);
+        padding: var(--padding-lg);
+      }
+
+      button {
+        background-color: var(--secondry-bg-color);
+        color: var(--main-bg-color);
+        border: var(--border-thin-maincolor);
+        padding: var(--padding-sm);
+      }
+    </style>
+  </head>
+  <body>
+    <h1>The Traditional Way</h1>
+
+    <div class="container">
+      <h2>Lorem Ipsum</h2>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam semper
+        diam at erat pulvinar, at pulvinar felis blandit.
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam semper
+        diam at erat pulvinar, at pulvinar felis blandit.
+      </p>
+      <p>
+        <button>Yes</button>
+        <button>No</button>
+      </p>
+    </div>
+  </body>
+</html>
