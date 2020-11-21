@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      /*
+        @media not|only mediatype and (mediafeature and|or|not mediafeature) {
+           CSS-Code;
+        }
+
+        mediatype: 
+            all	        Used for all media type devices
+            print	    Used for printers
+            screen	    Used for computer screens, tablets, smart-phones etc.
+            speech      Used for screenreaders that "reads" the page out loud
+
+        Media Features
+            min-width *	    The minimum width of the display area, such as a browser window
+            max-width *	    The maximum width of the display area, such as a browser window
+            max-height	    The maximum height of the display area, such as a browser window
+            min-height	    The minimum height of the display area, such as a browser window
+            orientation	    The orientation of the viewport (landscape or portrait mode)
+            width	        The viewport width
+            height	        The viewport height
+            color	        The number of bits per color component for the output device
+            monochrome	    The number of bits per "color" on a monochrome (greyscale) device
+            ......
+      */
+      body{
+          background-color: rgb(221, 60, 60);
+          color: white;
+      }
+      h1{
+          font-size: 64px;
+      }
+      h2{
+          font-size: 48px;
+      }
+      p{
+          font-size: 20px;
+          line-height: 2;
+      }
+      li{
+          font-size: 20px;
+      }
+      
+      /* @media print{
+          body{
+              color: black;
+              background-color: transparent;
+          }
+          h1{
+              font-size: 2em;
+          }
+          h2{
+              font-size: 1.5em;
+          }
+          p, li{
+              font-size: 16px;
+          }
+          img{
+              display: none;
+          }
+      } */
+    </style>
+    <link rel="stylesheet" href="css/print.css">
+  </head>
+  <body>
+    <h1>CSS Media Queries</h1>
+    <hr />
+    <h2>CSS2 Introduced Media Types</h2>
+    <p>
+      The @media rule, introduced in CSS2, made it possible to define different
+      style rules for different media types.
+    </p>
+
+    <p>
+      Examples: You could have one set of style rules for computer screens, one
+      for printers, one for handheld devices, one for television-type devices,
+      and so on.
+    </p>
+
+    <p>
+      Unfortunately these media types never got a lot of support by devices,
+      other than the print media type.
+    </p>
+    <hr />
+    <h2>CSS3 Introduced Media Queries</h2>
+    <p>
+      Media queries in CSS3 extended the CSS2 media types idea: Instead of
+      looking for a type of device, they look at the capability of the device.
+    </p>
+
+    <p>Media queries can be used to check many things, such as:</p>
+    <ul>
+      <li>width and height of the viewport</li>
+      <li>width and height of the device</li>
+      <li>orientation (is the tablet/phone in landscape or portrait mode?)</li>
+      <li>resolution</li>
+    </ul>
+    <img src="images/54-1024x575.webp" alt="">
+  </body>
+</html>
