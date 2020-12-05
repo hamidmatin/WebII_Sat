@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="lib/bootstrap/dist/css/bootstrap.min.css" />
+    <style>
+      /* .card-columns{
+        column-count: 6;
+      } */
+    </style>
+  </head>
+  <body>
+    <div class="container py-3">
+      <div class="card mb-5">
+        <div class="card-header">Header</div>
+        <div class="card-body">Body</div>
+        <div class="card-footer">Footer</div>
+      </div>
+      <h2>Cards with Contextual Classes</h2>
+      <div class="card">
+        <div class="card-body">Basic card</div>
+      </div>
+      <br />
+      <div class="card bg-primary text-white">
+        <div class="card-body">Primary card</div>
+      </div>
+      <br />
+      <div class="card bg-success text-white">
+        <div class="card-body">Success card</div>
+      </div>
+      <br />
+      <div class="card bg-info text-white">
+        <div class="card-body">Info card</div>
+      </div>
+      <br />
+      <div class="card bg-warning text-white">
+        <div class="card-body">Warning card</div>
+      </div>
+      <br />
+      <div class="card bg-danger text-white">
+        <div class="card-body">Danger card</div>
+      </div>
+      <br />
+      <div class="card bg-secondary text-white">
+        <div class="card-body">Secondary card</div>
+      </div>
+      <br />
+      <div class="card bg-dark text-white">
+        <div class="card-body">Dark card</div>
+      </div>
+      <br />
+      <div class="card bg-light text-dark">
+        <div class="card-body">Light card</div>
+      </div>
+
+      <div class="card my-5">
+        <div class="card-body">
+          <h4 class="card-title">Card title</h4>
+          <p class="card-text">Some example text. Some example text.</p>
+          <a href="#" class="card-link">Card link</a>
+          <a href="#" class="card-link">Another link</a>
+          <a href="#" class="card-link">Another link</a>
+          <a href="#" class="card-link">Another link</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-sm-6 col-md-3 mb-3">
+          <div class="card">
+            <img src="images/img_avatar1.png" alt="" class="card-img-top" />
+            <div class="card-body">
+              <h4 class="card-title">John Doe</h4>
+              <p class="card-text">Some example text.</p>
+              <a href="#" class="btn btn-primary">See Profile</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-3 mb-3">
+          <div class="card">
+            <div class="card-body">
+              <h4 class="card-title">John Doe</h4>
+              <p class="card-text">Some example text.</p>
+              <a href="#" class="btn btn-primary">See Profile</a>
+            </div>
+            <img src="images/img_avatar5.png" alt="" class="card-img-bottom" />
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-3 mb-3">
+          <div class="card">
+            <img src="images/img_avatar1.png" alt="" class="card-img" />
+            <div class="card-img-overlay">
+              <h4 class="card-title">John Doe</h4>
+              <p class="card-text">Some example text.</p>
+              <a href="#" class="btn btn-primary">See Profile</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-3 mb-3">
+          <div class="card">
+            <img src="images/img_avatar5.png" alt="" class="card-img" />
+            <div class="card-img-overlay">
+              <h4 class="card-title">John Doe</h4>
+              <p class="card-text">Some example text.</p>
+              <a href="#" class="btn btn-primary stretched-link">See Profile
+                <!-- <span style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></span> -->
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container my-5">
+      <div class="card-columns">
+        <div class="card bg-primary">
+          <div class="card-body text-center">
+            <p class="card-text">Some text inside the first card</p>
+          </div>
+        </div>
+        <div class="card bg-warning">
+          <div class="card-body text-center">
+            <p class="card-text">Some text inside the second card</p>
+          </div>
+        </div>
+        <div class="card bg-success">
+          <div class="card-body text-center">
+            <p class="card-text">Some text inside the third card</p>
+          </div>
+        </div>
+        <div class="card bg-danger">
+          <div class="card-body text-center">
+            <p class="card-text">Some text inside the fourth card</p>
+          </div>
+        </div>
+        <div class="card bg-light">
+          <div class="card-body text-center">
+            <p class="card-text">Some text inside the fifth card</p>
+            <p class="card-text">Some text inside the fifth card</p>
+            <p class="card-text">Some text inside the fifth card</p>
+            <p class="card-text">Some text inside the fifth card</p>
+            <p class="card-text">Some text inside the fifth card</p>
+          </div>
+        </div>
+        <div class="card bg-info">
+          <div class="card-body text-center">
+            <p class="card-text">Some text inside the sixth card</p>
+          </div>
+        </div>
+        <div class="card bg-info">
+          <div class="card-body text-center">
+            <p class="card-text">Some text inside the sixth card</p>
+          </div>
+        </div>
+        <div class="card bg-info">
+          <div class="card-body text-center">
+            <p class="card-text">Some text inside the sixth card</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container my-5">
+      <div class="card-deck">
+        <div class="card bg-primary">
+          <div class="card-body text-center">
+            <p class="card-text">Some text inside the first card</p>
+          </div>
+        </div>
+        <div class="card bg-warning">
+          <div class="card-body text-center">
+            <p class="card-text">Some text inside the second card</p>
+          </div>
+        </div>
+        <div class="card bg-success">
+          <div class="card-body text-center">
+            <p class="card-text">
+              Some text inside the third card akjfadad fakdf<br />
+              kjagfkjg ag j<br />
+              jsaga gfa sfk
+            </p>
+          </div>
+        </div>
+        <div class="card bg-danger">
+          <div class="card-body text-center">
+            <p class="card-text">Some text inside the fourth card</p>
+          </div>
+        </div>
+        <div class="card bg-light">
+          <div class="card-body text-center">
+            <p class="card-text">Some text inside the fifth card</p>
+          </div>
+        </div>
+        <div class="card bg-info">
+          <div class="card-body text-center">
+            <p class="card-text">
+              Some text inside the sixth card lkashf laa lfahf lka
+            </p>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+    <div class="container my-5">
+      <div class="card-group">
+        <div class="card bg-primary">
+          <div class="card-body text-center">
+            <p class="card-text">Some text inside the first card</p>
+          </div>
+        </div>
+        <div class="card bg-warning">
+          <div class="card-body text-center">
+            <p class="card-text">Some text inside the second card</p>
+          </div>
+        </div>
+        <div class="card bg-success">
+          <div class="card-body text-center">
+            <p class="card-text">
+              Some text inside the third card akjfadad fakdf<br />
+              kjagfkjg ag j<br />
+              jsaga gfa sfk
+            </p>
+          </div>
+        </div>
+        <div class="card bg-danger">
+          <div class="card-body text-center">
+            <p class="card-text">Some text inside the fourth card</p>
+          </div>
+        </div>
+        <div class="card bg-light">
+          <div class="card-body text-center">
+            <p class="card-text">Some text inside the fifth card</p>
+          </div>
+        </div>
+        <div class="card bg-info">
+          <div class="card-body text-center">
+            <p class="card-text">
+              Some text inside the sixth card lkashf laa lfahf lka
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="lib/jQuery/jquery-3.5.1.min.js"></script>
+    <script src="lib/popper/popper.min.js"></script>
+    <script src="lib/bootstrap/dist/js/bootstrap.min.js"></script>
+  </body>
+</html>
