@@ -1,0 +1,72 @@
+.navbar {
+  background-color: $gray-400;
+  color: $gray-800;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 1em;
+  //   Decendant Selector
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    // Siblings selector
+    li + li {
+      margin-left: 20px;
+    }
+  }
+  a {
+    color: $gray-800;
+    text-decoration: none;
+    display: block;
+    &:hover {
+      text-decoration: underline;
+      color: $primary;
+      text-shadow: $text-shadow;
+    }
+  }
+  //   Child Selector
+  > a {
+    font-weight: 900;
+    font-size: 1.5em;
+    color: $gray-600;
+    padding: 1em;
+  }
+}
+
+.btn {
+  display: inline-block;
+  text-decoration: none;
+  outline: none;
+  cursor: pointer;
+  padding: 1em 2em;
+  background-color: $gray-100;
+  border-radius: $border-radius;
+
+  &.btn-primary {
+    background-color: $primary;
+    &.active {
+      background-color: darken($color: $primary, $amount: 30%);
+    }
+    &:hover {
+      background-color: lighten($color: $primary, $amount: 30%);
+    }
+    &:active {
+      background-color: darken($color: $primary, $amount: 10%);
+    }
+  }
+
+  &.btn-secondary {
+    background-color: $secondary;
+    &.active {
+      background-color: darken($color: $secondary, $amount: 30%);
+    }
+    &:hover {
+      background-color: lighten($color: $secondary, $amount: 30%);
+    }
+    &:active {
+      background-color: darken($color: $secondary, $amount: 10%);
+    }
+  }
+}
