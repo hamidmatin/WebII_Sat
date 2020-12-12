@@ -1,0 +1,15 @@
+@import "variables";
+html{
+    font-family: $main-font-family;
+    font-size: $base-font-size;
+}
+body{
+    margin: 0;
+    background-color: $main-bg-color;
+    color: $main-text-color;
+    font-size: $base-font-size;
+}
+p, h1, h2, h3, h4, h5{
+    margin-top: 0;
+}
+
