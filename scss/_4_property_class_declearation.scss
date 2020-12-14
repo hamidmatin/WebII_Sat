@@ -1,0 +1,41 @@
+//property or class declearation
+
+// Element Selector
+$my-selector: h1;
+$my-property: color;
+#{$my-selector}{
+    #{$my-property}: $primary;
+}
+
+// class selector
+$my-selector: test;
+$my-property: background-color;
+.#{$my-selector}{
+    #{$my-property}: $primary;
+}
+
+// id selector
+$my-selector: header;
+$my-property: background-color;
+##{$my-selector}{
+    #{$my-property}: $primary;
+}
+
+////////////////////////
+$color-name: primary;
+$color-value: $primary;
+.text-#{$color-name}{
+    color: $color-value;
+}
+
+$color-name: secondary;
+$color-value: $secondary;
+.text-#{$color-name}{
+    color: $color-value;
+}
+
+$color-name: pink;
+$color-value: $pink;
+.text-#{$color-name}{
+    color: $color-value;
+}

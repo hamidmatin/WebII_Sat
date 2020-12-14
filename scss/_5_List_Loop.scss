@@ -1,0 +1,50 @@
+$sizes: 10, 20, 30, 40, 50, 60;
+
+@each $size in $sizes {
+  .icon-#{$size} {
+    display: inline-block;
+    font-size: $size + px;
+    width: $size + px;
+    height: $size + px;
+  }
+}
+
+// before 6
+@for $i from 1 to 6 {
+  .to-#{$i} {
+    display: inline-block;
+  }
+}
+// include 6
+@for $i from 1 through 6 {
+  .through-#{$i} {
+    display: inline-block;
+  }
+}
+
+$col-count: 4;
+@for $i from 1 through $col-count {
+  .col-#{$i} {
+    width: (100% / $col-count) * $i;
+  }
+}
+
+////////////////////
+$breakpoints: (
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
+  xxl: 1400px,
+  xxxl: 1600px
+);
+
+@each $breakpoint-name, $breakpoint-value in $breakpoints {
+  @media screen and (min-width: $breakpoint-value) {
+    @for $i from 1 through $col-count {
+      .col-#{$breakpoint-name}-#{$i} {
+        width: (100% / $col-count) * $i;
+      }
+    }
+  }
+}
