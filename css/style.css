@@ -794,5 +794,58 @@ h1 {
     flex: 0 0 100%;
   }
 }
+/*********** Session 6 *****/
+.strong, .important {
+  font-weight: 900;
+}
+
+.important {
+  color: #1961ae;
+}
+
+.strong {
+  color: #17a2b8;
+  font-size: 80%;
+}
+
+.card, .button {
+  box-shadow: 0 2px 4px -2px #cccccc;
+}
+
+a, .button {
+  text-decoration: none;
+  color: black;
+  display: inline-block;
+}
+
+.button {
+  padding: 0.5em 1em;
+}
+
+a {
+  padding: 16px;
+}
+
+.card {
+  border: 1px solid #cccccc;
+}
+
+.reset-buttons, .action-buttons {
+  box-sizing: border-box;
+  border-top: 1px rgba(0, 0, 0, 0.12) solid;
+  padding: 16px 0;
+  width: 100%;
+}
+.reset-buttons:hover, .action-buttons:hover {
+  border: 2px rgba(0, 0, 0, 0.5) solid;
+}
+
+.action-buttons {
+  color: #4285f4;
+}
+
+.reset-buttons {
+  color: #cddc39;
+}
 
 /*# sourceMappingURL=style.css.map */

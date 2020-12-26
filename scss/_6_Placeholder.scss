@@ -1,0 +1,60 @@
+%strong-alert {
+  font-weight: 900;
+}
+// .important, .strong{
+//     font-weight: 900;
+
+// }
+.important {
+  @extend %strong-alert;
+  color: $primary;
+}
+.strong {
+  @extend %strong-alert;
+  color: $secondary;
+  font-size: 80%;
+}
+
+%shadow {
+  box-shadow: 0 2px 4px -2px #cccccc;
+}
+%normal-anchor {
+  text-decoration: none;
+  color: black;
+  display: inline-block;
+}
+.button {
+  @extend %normal-anchor;
+  @extend %shadow;
+  padding: 0.5em 1em;
+}
+a {
+  @extend %normal-anchor;
+  padding: 16px;
+}
+
+.card {
+  border: 1px solid #cccccc;
+  @extend %shadow;
+}
+
+%toolbelt {
+  box-sizing: border-box;
+  border-top: 1px rgba(#000, 0.12) solid;
+  padding: 16px 0;
+  width: 100%;
+
+  &:hover {
+    border: 2px rgba(#000, 0.5) solid;
+  }
+}
+
+.action-buttons {
+  @extend %toolbelt;
+  color: #4285f4;
+}
+
+.reset-buttons {
+  @extend %toolbelt;
+  color: #cddc39;
+}
