@@ -1,0 +1,16 @@
+/******** Functions **********/
+
+@function invert($color, $amount: 100%) {
+  $inverse: change-color($color, $hue: hue($color) + 180);
+  @return mix($inverse, $color, $amount);
+}
+
+.header {
+  background-color: invert($primary, 80%);
+}
+.header1 {
+  background-color: invert($primary, 20%);
+}
+.header1 {
+  background-color: invert($primary, 100%);
+}

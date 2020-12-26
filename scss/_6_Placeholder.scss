@@ -55,6 +55,6 @@ a {
 }
 
 .reset-buttons {
-  @extend %toolbelt;
+  @extend %toolbelt; 
   color: #cddc39;
 }

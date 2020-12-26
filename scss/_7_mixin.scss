@@ -1,0 +1,64 @@
+/******** Mixins ********/
+@mixin reset-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.nav {
+  @include reset-list;
+}
+
+ul {
+  @include reset-list();
+}
+
+@mixin rounded-corner($radius) {
+  border-radius: $radius;
+}
+
+.btn-rounded {
+  @include rounded-corner(5px);
+}
+.card {
+  @include rounded-corner(2px);
+}
+.image-circle {
+  @include rounded-corner(100%);
+}
+// Gradients
+
+@mixin gradient-bg($color) {
+  background: $color linear-gradient(180deg, mix($body-bg, $color, 15%), $color)
+    repeat-x;
+}
+@mixin alert-variant($background, $border, $color) {
+  color: $color;
+  @include gradient-bg($background);
+  border-color: $border;
+
+  hr {
+    border-top-color: darken($border, 5%);
+  }
+
+  .alert-link {
+    color: darken($color, 10%);
+  }
+}
+
+.alert-primary{
+    @include alert-variant($primary, $red, $red)
+}
+
+
+@mixin rtl($property, $ltr-value, $rtl-value) {
+  #{$property}: $ltr-value;
+
+  [dir=rtl] & {
+    #{$property}: $rtl-value;
+  }
+}
+
+.sidebar {
+  @include rtl(float, left, right);
+}
