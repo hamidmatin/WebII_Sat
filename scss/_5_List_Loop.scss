@@ -22,7 +22,7 @@ $sizes: 10, 20, 30, 40, 50, 60;
   }
 }
 
-$col-count: 4;
+$col-count: 20;
 @for $i from 1 through $col-count {
   .col-#{$i} {
     width: (100% / $col-count) * $i;
@@ -30,6 +30,18 @@ $col-count: 4;
 }
 
 ////////////////////
+*{box-sizing: border-box;}
+.row{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+[class*='col-']{
+  flex: 0 0 100%;
+  padding-left: 15px;
+  padding-right: 15px;
+}
 $breakpoints: (
   sm: 576px,
   md: 768px,
@@ -43,7 +55,7 @@ $breakpoints: (
   @media screen and (min-width: $breakpoint-value) {
     @for $i from 1 through $col-count {
       .col-#{$breakpoint-name}-#{$i} {
-        width: (100% / $col-count) * $i;
+        flex:0 0 (100% / $col-count) * $i;
       }
     }
   }
