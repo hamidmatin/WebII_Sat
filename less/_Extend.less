@@ -1,0 +1,55 @@
+/*********** Extends ************/
+.inline {
+  color: red;
+}
+nav ul {
+  &:extend(.inline);
+  background: blue;
+}
+
+a:extend(.inline) {
+  background-color: chocolate;
+}
+.strong-alert {
+  font-weight: 900;
+}
+a.strong-alert {
+  text-decoration: none;
+}
+
+.card .strong-alert {
+  background-color: beige;
+}
+
+.extend_all:extend(.strong-alert all) {
+  font-size: larger;
+}
+
+.multi_extend:extend(.inline, .strong-alert) {
+  box-shadow: 0 0 4px;
+}
+
+.bucket {
+  tr {
+    // nested ruleset with target selector
+    color: blue;
+  }
+  background-color: beige;
+}
+.some-class:extend(.bucket tr) {
+    font-size: 20px;
+} // nested ruleset is recognized
+
+[title=identifier] {
+    color: blue;
+}
+[title='identifier'] {
+    color: blue;
+}
+[title="identifier"] {
+    color: blue;
+}
+
+.noQuote:extend([title=identifier]) {font-size: 16px;}
+.singleQuote:extend([title='identifier']) {font-size: 16px;}
+.doubleQuote:extend([title="identifier"]) {font-size: 16px;}

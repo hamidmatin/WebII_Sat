@@ -1,0 +1,38 @@
+/********* Parent Selectors ***********/
+.button {
+    &-ok {
+      background-image: url("ok.png");
+    }
+    &-cancel {
+      background-image: url("cancel.png");
+    }
+  
+    &-custom {
+      background-image: url("custom.png");
+    }
+  }
+
+  .link {
+    & + & {
+      color: red;
+    }
+  
+    & & {
+      color: green;
+    }
+  
+    && {
+      color: blue;
+    }
+  
+    &, &ish {
+      color: cyan;
+    }
+  }
+
+  p, a, ul, li {
+    border-top: 2px dotted #366;
+    & + & {
+      border-top: 0;
+    }
+  }
